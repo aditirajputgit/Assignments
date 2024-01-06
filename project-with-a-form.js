@@ -10,7 +10,8 @@ function addProject() {
     if(projectName == "" || projectDescription == "" || projectLink == ""){
         alert("Fill all the details")
     }
-    console.log(projectName);
+    else{
+      console.log(projectName);
     projectsName.textContent = projectName
     projectsDesc.textContent = projectDescription
     
@@ -30,6 +31,8 @@ function addProject() {
     `;*/
 
     projectsView.appendChild(projectDiv);
+    }
+    
 
     // Clear form fields
     document.getElementById('projectName').value = '';
