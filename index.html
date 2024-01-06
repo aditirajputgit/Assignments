@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <link rel="icon" href="/favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#000000" />
+  <title>projects and footer</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Comfortaa%3A700"/>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro%3A400%2C500%2C700"/>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway%3A500"/>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito%3A400%2C700"/>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Playfair+Display%3A700"/>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto%3A500"/>
+  <link rel="stylesheet" href="./styles/projects-and-footer.css"/>
+  <link rel="stylesheet" href="./styles/project-with-a-form.css"/>
+</head>
+<style>
+  html {
+  font-size: 10px;
+}
+body {
+  margin: 0;
+  line-height: normal;
+}
+</style>
+<script src="project-with-a-form.js"></script>
+<body>
+<div class="projects-and-footer-Qr1">
+  <div id = "About">
+  <div class="auto-group-3pnf-mKB">
+    <div class="image-EMB">
+      <img class="image-wmP" src="./assets/image.png"/>
+    </div>
+    <div class="header-p4V">
+      <p class="madelyn-torff-LHj">Madelyn Torff</p>
+      <div class="nav-oh7">
+        <p class="sobre-KQZ"><a href = "#About">About</a></p>
+        <p class="sobre-dw3"> <a href="#project">Projects </a></p>
+        <p class="sobre-Avy"> <a href = "#Contact" >Contacts</a></p>
+      </div>
+    </div>
+    <div class="intro-hvu">
+      <p class="ui-ux-designer-2yB">UI/UX Designer</p>
+      <div class="content-ZCR">
+        <p class="title-Jfo">Hello,  my name is Madelyn Torff</p>
+        <div class="auto-group-wkij-37b">
+          <p class="text-Axu">Short text with details about you, what you do or your professional career. You can add more information on the about page.</p>
+        
+          <div class="buttons-DZo">
+            <div class="button-primary-9yF"><a href = "#project">Projects</a></div>
+            <div class="button-secondary-p3o">LinkedIn</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  <div class="project-with-a-form-yqf">
+    <div class="auto-group-8bk7-vku">
+      <div >
+      </div>
+      <div class="section-title-PeV">
+        <p class="text-iAy">Add Project</p>
+        <div class="rectangle-19-2SZ">
+        </div>
+      </div>
+      <div class="form-x5K">
+        <form id = "projectForm"></form>
+        <div class="form-group-input-m2m">
+          
+            <label class="label-JoP" for="projectName">Project Name:</label>
+            <input type="text" id="projectName" class="input-2jP" required>          
+        </div>
+        <div class="form-group-input-9Z7">
+            <label class="label-Jgu" for="projectLink">Project link:</label>
+            <input type="text" id="projectLink" class="input-qRw" required>
+        </div>
+        <div class="form-group-textarea-koo">
+          <label class="label-pHs" for="projectDescription">Project Description:</label>
+            <input type="text" id="projectDescription" class="textarea-M2u" required>
+        </div>
+        <button class="button-primary-p2Q" onclick="addProject()">Add </button>
+      </form>
+      </div>
+    </div>
+    <img class="auto-group-36hz-MSD" src="./assets/auto-group-36hz.png"/>
+  </div>
+  <div class="projects-UPF" id = "project">
+    <div class="section-title-yau">
+      <p class="text-Wqj">Projects</p>
+      <div class="rectangle-19-r8u">
+      </div>
+    </div>
+    <div class="project1-mWm">
+      <div class="project-nfo-WjF">
+        <div class="frame-3350-Ev9">
+          <p class="text-ZxR" id = "projectsName">Project Name</p>
+          <p class="text-i4d" id = "projectsDesc">I created this personal project in order to show how to create an interface in Figma using a portfolio as an example.</p>
+          <button type="button" class="boto-secudrio-FKT" id = "button"> View Project</button>
+        </div>
+      </div>
+      <div class="pexels-elly-fairytale-3823207-1-rq3">
+      </div>
+    </div>
+    <div class="project2-gZB">
+      <img class="rectangle-7-qBB" src="./assets/rectangle-7-wND.png"/>
+      <div class="project-nfo-ZN5">
+        <div class="frame-3350-tfF">
+          <p class="text-Ej7">Project Name</p>
+          <p class="text-nVj">What was your role, your deliverables, if the project was personal, freelancing.</p>
+          <div class="boto-secudrio-L1T">View Project</div>
+        </div>
+      </div>
+    </div>
+    <div class="project3-8xu">
+      <div class="project-nfo-Hau">
+        <div class="frame-3350-d8y">
+          <p class="text-yTj">Project Name</p>
+          <p class="text-85j">You can also add in this description the type of the project, if it was for web, mobile, electron.</p>
+          <div class="boto-secudrio-frM">View Project</div>
+        </div>
+      </div>
+      <img class="rectangle-7-wJ5" src="./assets/rectangle-7.png"/>
+    </div>
+    <div id="projectsView">
+      <!-- Display existing projects -->
+    </div>
+  </div>
+  
+  <div class="footer-icons-5d7" id = "Contact">
+  <div class="icons-brM">
+    <img class="ph-instagram-logo-fill-741" src="./assets/ph-instagram-logo-fill.png" width="42rem" height="42rem"/>
+    <img class="bi-linkedin-2wf" src="./assets/bi-linkedin.png" width="42rem" height="42rem"/>
+    <img class="bi-envelope-fill-muF" src="./assets/bi-envelope-fill.png" width="42rem" height="42rem"/>
+  </div>
+  <p class="madelyn-torff-2021-iJh">Copyright © 2024.  All rights reserved</p>
+</div>
+  <img class="vector-QhT" src="./assets/vector.png"/>
+</div>
+</body>
